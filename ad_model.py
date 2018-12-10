@@ -11,7 +11,6 @@ class mainModel:
         self.mp = 0
         self.gold = 400
         self.item_list = []
-        self.using_sword = False
         self.current_hp = self.hp
         self.current_mp = self.mp
         self.item = ["체력물약", "마나물약"]
@@ -199,6 +198,8 @@ class mainModel:
             self.magican()
         elif self.job == "궁수":
             self.hunter()
+        else:
+            self.mario()
 
     # 전사 스테이터스
     def warrior(self):
@@ -233,6 +234,16 @@ class mainModel:
         self.current_hp = self.hp
         self.current_mp = self.mp
 
+    # 히든 캐릭터 스테이터스
+    def mario(self):
+        self.level += 1
+        self.str += 10
+        self.int += 10
+        self.dex += 10
+        self.hp += 100
+        self.mp += 50
+        self.current_hp = self.hp
+        self.current_mp = self.mp
     # 뉴 게임 시 정보 초기화
     def clear(self):
         self.job = ""
@@ -252,7 +263,7 @@ class mainModel:
     def save(self,filename):
         f = open(filename, "w")
         item_list = ",".join(self.item_list) if len(self.item_list) > 0 else "없음"
-        save_data = [self.job,self.level,self.str,self.int,self.dex,self.hp,self.mp,self.gold,item_list,self.using_sword]
+        save_data = [self.job,self.level,self.str,self.int,self.dex,self.hp,self.mp,self.gold,item_list]
         for i in range(len(save_data)):
             if i != len(save_data) - 1:
                 f.write(str(save_data[i]) + "\n")
@@ -281,8 +292,6 @@ class mainModel:
             for i in list:
                 if i != "없음":
                     self.item_list.append(i)
-
-            self.using_sword = load_data[9]
             self.current_hp = self.hp
             self.current_mp = self.mp
             return True
@@ -306,11 +315,5 @@ class mainModel:
         self.mon_cu_hp = self.boss_hp
         self.mon_str = self.boss_str
 
-    # 용사의 검 사용
-    def use_sword(self):
-        if self.mon_cu_hp <= 0 :
-            self.using_sword = True
-        else:
-            pass
 
 

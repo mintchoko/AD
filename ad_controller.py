@@ -119,6 +119,8 @@ class mainController:
                             self.model.magican()
                         elif self.model.job == "궁수":
                             self.model.hunter()
+                        else:
+                            self.model.mario()
                     self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                         self.model.current_mp, self.model.mp, self.model.gold)
         elif b1.text() == "강타":
@@ -158,6 +160,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -200,6 +204,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -242,6 +248,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -284,6 +292,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -326,6 +336,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -368,6 +380,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -518,6 +532,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -560,6 +576,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -602,6 +620,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -644,6 +664,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -686,6 +708,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -728,6 +752,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -822,6 +848,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -864,6 +892,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -906,6 +936,8 @@ class mainController:
                                 self.model.magican()
                             elif self.model.job == "궁수":
                                 self.model.hunter()
+                            else:
+                                self.model.mario()
                         self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
                                             self.model.current_mp, self.model.mp, self.model.gold)
             else:
@@ -957,3 +989,10 @@ class mainController:
 
         elif b4.text() == "뒤로":
             self.view.back()
+
+        elif b4.text() == "":
+            self.model.job_set("마리오")
+            self.view.user_text(self.model.job, self.model.level, self.model.current_hp, self.model.hp,
+                                self.model.current_mp, self.model.mp, self.model.gold)
+            self.view.gameWindow.clear()
+            self.view.village(self.model.level)

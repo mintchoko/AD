@@ -149,7 +149,7 @@ class mainView(QWidget):
             self.button_text("다음 던전","상점","저장/불러오기","메인으로")
         elif level == 2:
             self.placeWindow.setText("아제로스")
-            self.gameWindow.append("아제로스에 도착하였습니다.")
+            self.gameWindow.append("아제로스에 도착하였습니다. \n피곤이 몰려온다.")
             self.button_text("다음 던전","상점","저장/불러오기","메인으로")
         elif level == 3:
             self.placeWindow.setText("슬리피우드")
@@ -157,35 +157,35 @@ class mainView(QWidget):
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 4:
             self.placeWindow.setText("오르비스")
-            self.gameWindow.append("오르비스에 도착하였습니다.")
+            self.gameWindow.append("오르비스에 도착하였습니다.\n높은 곳이라 공기가 맑다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 5:
             self.placeWindow.setText("데마시아")
-            self.gameWindow.append("데마시아에 도착하였습니다.")
+            self.gameWindow.append("데마시아에 도착하였습니다.\n멀리서 동상이 보인다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 6:
             self.placeWindow.setText("루테란")
-            self.gameWindow.append("루테란에 도착하였습니다.")
+            self.gameWindow.append("루테란에 도착하였습니다.\n실리안 왕자가 반겨줍니다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 7:
             self.placeWindow.setText("판데모니움")
-            self.gameWindow.append("판데모니움에 도착하였습니다.")
+            self.gameWindow.append("판데모니움에 도착하였습니다.\n주인공은 지쳐갑니다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 8:
             self.placeWindow.setText("발할라")
-            self.gameWindow.append("발할라에 도착하였습니다.")
+            self.gameWindow.append("발할라에 도착하였습니다.\n포근한 기분이 넘칩니다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 9:
             self.placeWindow.setText("아반트헤임")
-            self.gameWindow.append("아반트헤임에 도착하였습니다.")
+            self.gameWindow.append("아반트헤임에 도착하였습니다.\n쓸쓸한 분위기가 감돕니다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 10:
             self.placeWindow.setText("마을")
-            self.gameWindow.append("마을에 도착하였습니다.")
+            self.gameWindow.append("마을에 도착하였습니다.\n여정의 끝이 보입니다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         else:
             self.placeWindow.setText("쿠파성")
-            self.gameWindow.append("쿠파성에 도착하였습니다.")
+            self.gameWindow.append("쿠파성에 도착하였습니다.\n주인공은 의지가 충만합니다.")
             self.button_text("마지막 던전", "상점", "저장/불러오기", "메인으로")
     # 유저 스테이터스 갱신
     def user_text(self,job,level,cu_hp,hp,cu_mp,mp,gold):
@@ -447,7 +447,7 @@ class mainView(QWidget):
                 self.button_text(self.magican_skill[0],self.magican_skill[1],self.magican_skill[2],"취소")
             else:
                 self.button_text(self.magican_skill[0], self.magican_skill[1], self.magican_skill[2], "다음")
-        else:
+        elif job == "궁수":
             if num == 0 :
                 pass
             elif num == 1 :
@@ -459,6 +459,17 @@ class mainView(QWidget):
             else:
                 self.button_text(self.hunter_skill[0], self.hunter_skill[1], self.hunter_skill[2], "다음")
 
+        else:
+            if num == 0 :
+                pass
+            elif num == 1 :
+                self.button_text(self.warrior_skill[0],"","","취소")
+            elif num == 2 :
+                self.button_text(self.warrior_skill[0],self.magican_skill[1],"","취소")
+            elif num == 3:
+                self.button_text(self.warrior_skill[0],self.magican_skill[1],self.hunter_skill[2],"취소")
+            else:
+                self.button_text(self.warrior_skill[0], self.magican_skill[1], self.hunter_skill[2], "다음")
     def next_skill(self,job,level):
         num = int(level / 2)
         if job == "전사":
@@ -471,11 +482,16 @@ class mainView(QWidget):
                 self.button_text(self.magican_skill[3], "", "", "취소")
             else:
                 self.button_text(self.magican_skill[3], self.magican_skill[4], "", "취소")
-        else:
+        elif job == "궁수":
             if num == 4:
                 self.button_text(self.hunter_skill[3], "", "", "취소")
             else:
                 self.button_text(self.hunter_skill[3], self.hunter_skill[4], "", "취소")
+        else:
+            if num == 4:
+                self.button_text(self.magican_skill[3], "", "", "취소")
+            else:
+                self.button_text(self.magican_skill[3], self.warrior_skill[4], "", "취소")
 
     # 마나 부족 시
     def mp_not(self):
