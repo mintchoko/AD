@@ -143,13 +143,49 @@ class mainView(QWidget):
 
     # 마을에 있을 때
     def village(self,level):
-        if level < 11:
-            self.placeWindow.setText("마을")
-            self.gameWindow.append("마을에 도착하였습니다.")
+        if level == 1 :
+            self.placeWindow.setText("헤네시스")
+            self.gameWindow.append("헤네시스에 도착하였습니다.\n여기저기 버섯이 가득하다.")
             self.button_text("다음 던전","상점","저장/불러오기","메인으로")
+        elif level == 2:
+            self.placeWindow.setText("아제로스")
+            self.gameWindow.append("아제로스에 도착하였습니다.")
+            self.button_text("다음 던전","상점","저장/불러오기","메인으로")
+        elif level == 3:
+            self.placeWindow.setText("슬리피우드")
+            self.gameWindow.append("슬리피우드에 도착하였습니다.\n 주인공은 나른해지는 것 같다.")
+            self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
+        elif level == 4:
+            self.placeWindow.setText("오르비스")
+            self.gameWindow.append("오르비스에 도착하였습니다.")
+            self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
+        elif level == 5:
+            self.placeWindow.setText("데마시아")
+            self.gameWindow.append("데마시아에 도착하였습니다.")
+            self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
+        elif level == 6:
+            self.placeWindow.setText("루테란")
+            self.gameWindow.append("루테란에 도착하였습니다.")
+            self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
+        elif level == 7:
+            self.placeWindow.setText("판데모니움")
+            self.gameWindow.append("판데모니움에 도착하였습니다.")
+            self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
+        elif level == 8:
+            self.placeWindow.setText("발할라")
+            self.gameWindow.append("발할라에 도착하였습니다.")
+            self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
+        elif level == 9:
+            self.placeWindow.setText("아반트헤임")
+            self.gameWindow.append("아반트헤임에 도착하였습니다.")
+            self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
+        elif level == 10:
+            self.placeWindow.setText("후쿠시마")
+            self.gameWindow.append("후쿠시마에 도착하였습니다.")
+            self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         else:
-            self.placeWindow.setText("마을")
-            self.gameWindow.append("마을에 도착하였습니다.")
+            self.placeWindow.setText("쿠파성")
+            self.gameWindow.append("쿠파성에 도착하였습니다.")
             self.button_text("마지막 던전", "상점", "저장/불러오기", "메인으로")
     # 유저 스테이터스 갱신
     def user_text(self,job,level,cu_hp,hp,cu_mp,mp,gold):
@@ -206,10 +242,10 @@ class mainView(QWidget):
     def dungeon_enter(self,level):
         if level == 11:
             self.placeWindow.setText("파이널 스테이지")
-            self.gameWindow.setText("마왕과 조우하였습니다!")
-            self.gameWindow.append("마왕 : 드디어 부활의 시간이 다가왔다!")
-            self.gameWindow.append("마왕 : \"너를 집어삼키고 이 세계를 파멸로 이끌어주지!\"")
-            self.gameWindow.append("주인공 : \"덤벼라 마왕! 이번에야 말로 영원히 봉인해주마!\"\n")
+            self.gameWindow.setText("마왕 쿠파와 조우하였습니다!")
+            self.gameWindow.append("마왕 쿠파 : \"드디어 부활의 시간이 다가왔다!\"")
+            self.gameWindow.append("마왕 쿠파 : \"너를 집어삼키고 이 세계를 파멸로 이끌어주지!\"\n")
+            self.gameWindow.append("주인공 : \"덤벼라 쿠파! 이번에야 말로 영원히 봉인해주마!\"")
         else:
             self.placeWindow.setText("스테이지" + str(level))
             self.gameWindow.setText("던전에 입장하였습니다.")
@@ -455,8 +491,8 @@ class mainView(QWidget):
         self.gameWindow.clear()
         self.gameWindow.setText("주인공은 용사의검을 사용했다!")
         self.gameWindow.append("용사의검이 빛나기 시작했다!")
-        self.gameWindow.append("마왕 : \"젠장! 이렇게 당하다니!!!!")
-        self.gameWindow.append("마왕 봉인에 성공하였습니다!")
+        self.gameWindow.append("마왕 쿠파: \"젠장! 이렇게 당하다니!!!!")
+        self.gameWindow.append("마왕 쿠파의 봉인에 성공하였습니다!")
         self.button_text("엔딩")
 
 if __name__ == "__main__":

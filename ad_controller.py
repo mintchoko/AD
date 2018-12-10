@@ -409,7 +409,7 @@ class mainController:
                 self.view.village(self.model.level)
                 present = ["용사의검", "체력물약", "체력물약", "체력물약", "마나물약", "마나물약", "마나물약"]
                 self.model.item_list.extend(present)
-                self.view.text_start("d10_end.txt")
+                self.view.text_start("shop.txt")
 
         elif b1.text() == "엔딩":
             self.view.text_start("ending.txt")
