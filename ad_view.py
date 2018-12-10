@@ -153,7 +153,7 @@ class mainView(QWidget):
             self.button_text("다음 던전","상점","저장/불러오기","메인으로")
         elif level == 3:
             self.placeWindow.setText("슬리피우드")
-            self.gameWindow.append("슬리피우드에 도착하였습니다.\n 주인공은 나른해지는 것 같다.")
+            self.gameWindow.append("슬리피우드에 도착하였습니다.\n주인공은 나른해지는 것 같다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 4:
             self.placeWindow.setText("오르비스")
@@ -180,8 +180,8 @@ class mainView(QWidget):
             self.gameWindow.append("아반트헤임에 도착하였습니다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         elif level == 10:
-            self.placeWindow.setText("후쿠시마")
-            self.gameWindow.append("후쿠시마에 도착하였습니다.")
+            self.placeWindow.setText("마을")
+            self.gameWindow.append("마을에 도착하였습니다.")
             self.button_text("다음 던전", "상점", "저장/불러오기", "메인으로")
         else:
             self.placeWindow.setText("쿠파성")
