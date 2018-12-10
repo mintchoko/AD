@@ -312,7 +312,7 @@ class mainView(QWidget):
             self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
 
         else:
-            self.gameWindow.append("주인공은 "+action+"을/를 사용했다!")
+            self.gameWindow.append("주인공은 "+action+" 을/를 사용했다!")
             self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
             self.gameWindow.append(monster + "의 공격!")
             self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
