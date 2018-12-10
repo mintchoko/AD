@@ -304,96 +304,6 @@ class mainView(QWidget):
             self.gameWindow.append(monster + "의 공격!")
             self.gameWindow.append("주인공은" + str(mon_damage) + "의 데미지를 입었다.")
 
-        elif action == "강타":
-            self.gameWindow.append("주인공은 강타를 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "슬래시":
-            self.gameWindow.append("주인공은 슬래시를 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "삼연 베기":
-            self.gameWindow.append("주인공은 삼연 베기를 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "유성검":
-            self.gameWindow.append("주인공은 유성검을 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "바람의 상처":
-            self.gameWindow.append("주인공은 바람의 상처를 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "에너지 볼트":
-            self.gameWindow.append("주인공은 에너지 볼트를 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "파이어볼":
-            self.gameWindow.append("주인공은 파이어볼을 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "콜드빔":
-            self.gameWindow.append("주인공은 콜드빔을 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "라이트닝":
-            self.gameWindow.append("주인공은 라이트닝을 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "익스플로전":
-            self.gameWindow.append("주인공은 익스플로전 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "신비한 화살":
-            self.gameWindow.append("주인공은 신비한 화살을 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "더블 샷":
-            self.gameWindow.append("주인공은 더블 샷을 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "차지 샷":
-            self.gameWindow.append("주인공은 차지 샷을 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "화살 비":
-            self.gameWindow.append("주인공은 화살 비를 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
-        elif action == "스나이핑":
-            self.gameWindow.append("주인공은 스나이핑을 사용했다!")
-            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
-            self.gameWindow.append(monster + "의 공격!")
-            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
-
         elif action == "용사의검":
             self.gameWindow.append("주인공은 용사의검을 사용했다!")
             self.gameWindow.append("그러나 아무일도 일어나지 않았다!")
@@ -401,6 +311,11 @@ class mainView(QWidget):
             self.gameWindow.append(monster + "의 공격!")
             self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
 
+        else:
+            self.gameWindow.append("주인공은 "+action+"을/를 사용했다!")
+            self.gameWindow.append(monster + " 은/는 " + str(damage) + "의 데미지를 입었다.")
+            self.gameWindow.append(monster + "의 공격!")
+            self.gameWindow.append("주인공은 " + str(mon_damage) + "의 데미지를 입었다.")
     # 유저 체력 0
     def gameover(self):
         self.gameWindow.append("주인공은 쓰러졌다.\n")
