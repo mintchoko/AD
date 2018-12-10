@@ -208,7 +208,8 @@ class mainView(QWidget):
             self.placeWindow.setText("파이널 스테이지")
             self.gameWindow.setText("마왕과 조우하였습니다!")
             self.gameWindow.append("마왕 : 드디어 부활의 시간이 다가왔다!")
-            self.gameWindow.append("")
+            self.gameWindow.append("마왕 : \"너를 집어삼키고 이 세계를 파멸로 이끌어주지!\"")
+            self.gameWindow.append("주인공 : \"덤벼라 마왕! 이번에야 말로 영원히 봉인해주마!\"\n")
         else:
             self.placeWindow.setText("스테이지" + str(level))
             self.gameWindow.setText("던전에 입장하였습니다.")
