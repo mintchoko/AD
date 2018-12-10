@@ -420,7 +420,7 @@ class mainView(QWidget):
             elif num == 3:
                 self.button_text(self.hunter_skill[0],self.hunter_skill[1],self.hunter_skill[2],"취소")
             else:
-                self.button_text(self.magican_skill[0], self.hunter_skill[1], self.hunter_skill[2], "다음")
+                self.button_text(self.hunter_skill[0], self.hunter_skill[1], self.hunter_skill[2], "다음")
 
     def next_skill(self,job,level):
         num = int(level / 2)
