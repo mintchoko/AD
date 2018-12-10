@@ -381,6 +381,8 @@ class mainView(QWidget):
             self.gameWindow.append("")
             self.gameWindow.append("던전을 클리어하였습니다.")
             self.gameWindow.append("레벨 업!")
+            if self.placeWindow.text()[-1] == "1" or self.placeWindow.text()[-1] == "3" or self.placeWindow.text()[-1] == "5" or self.placeWindow.text()[-1] == "7" or self.placeWindow.text()[-1] == "9":
+                self.gameWindow.append("새로운 스킬을 획득했습니다!")
             self.button_text("탈출한다")
 
     # 스킬 클릭 시
